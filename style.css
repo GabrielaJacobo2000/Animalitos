@@ -1,0 +1,43 @@
+/*selector universal*/
+*{padding:0;
+    margin:0;
+    }
+    /*selector de tipo etiqueta*/
+    body {
+        background-color: blueviolet;
+    display:flex;
+    flex-wrap: wrap;}
+    h1 {color: rgb(240, 230, 230);}
+    /*selector de tipo: Clase*/
+    .tarjeta{
+        width: 320px;
+        background-color: aqua;
+        border-radius:3%;
+        /*centrando elementos*/
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-bottom: 8px; /*separación*/
+        display:inline-block;
+        transition:all; 0.4s ease-in-out;
+    }
+    .tarjeta .caja-contenedora{
+        width: 200px;
+    }
+    .tarjeta img{
+        width:100%;
+    object-fit:cover;
+    border: radius 5%;}
+    .tarjeta p {
+        color: chocolate;
+        font-size:  20px;
+    }
+    .tarjeta:hover {background-color: darkgreen;}
+    /*Selector de tipo id*/
+    /* Es unico*/
+    #Puerquitos{
+        color:crimson;
+    }
+    #Elefantes{color: chartreuse;}
