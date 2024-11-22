@@ -7,7 +7,8 @@
         background-color: blueviolet;
     display:flex;
     flex-wrap: wrap;}
-    h1 {color: rgb(240, 230, 230);}
+    h1 {color: rgb(240, 230, 230);
+    text-align: center;}
     /*selector de tipo: Clase*/
     .tarjeta{
         width: 320px;
