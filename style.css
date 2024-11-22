@@ -1,44 +1,75 @@
-/*selector universal*/
-*{padding:0;
-    margin:0;
-    }
-    /*selector de tipo etiqueta*/
-    body {
-        background-color: blueviolet;
-    display:flex;
-    flex-wrap: wrap;}
-    h1 {color: rgb(240, 230, 230);
-    text-align: center;}
-    /*selector de tipo: Clase*/
-    .tarjeta{
-        width: 320px;
-        background-color: aqua;
-        border-radius:3%;
-        /*centrando elementos*/
-        text-align: center;
-        display: flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        margin-bottom: 8px; /*separación*/
-        display:inline-block;
-        transition:all; 0.4s ease-in-out;
-    }
-    .tarjeta .caja-contenedora{
-        width: 200px;
-    }
-    .tarjeta img{
-        width:100%;
-    object-fit:cover;
-    border: radius 5%;}
-    .tarjeta p {
-        color: chocolate;
-        font-size:  20px;
-    }
-    .tarjeta:hover {background-color: darkgreen;}
-    /*Selector de tipo id*/
-    /* Es unico*/
-    #Puerquitos{
-        color:crimson;
-    }
-    #Elefantes{color: chartreuse;}
+*{
+    padding: 0; 
+    margin: 0;
+}
+
+/*CSS que me dio Google Fonts*/
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Selector de tipo: Etiqueta*/
+body{
+    background-color: rgb(210, 30, 150);
+    font-family: "Patrick Hand", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+main{
+    /*Ajustar las tarjetas a varias lineas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+h1{
+    color:rgb(94, 53, 117);
+    text-align: center;
+}
+/*Selector de tipo: Clase*/
+/*Reutilizar estilos*/
+.tarjeta {
+    width: 320px;
+    background-color: rgb(91, 219, 219);
+    border-radius: 3%;
+    /*Centrando elementos*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    padding: 12px;
+    border: 3px solid rgb(130, 30, 143);
+    transition: all 0.4s ease-in-out; /*Transicion suave*/
+}
+
+.titulo-tarjeta{
+    margin-bottom: 10px;
+}
+/*Pseudoclase Hover para crear animaciones*/
+.tarjeta:hover{
+    background-color: rgb(249, 213, 123);
+    transform: scale(1.05);
+    transform: rotate(3deg);
+}
+.tarjeta .caja-contenedora{
+    width: 200px;
+}
+.tarjeta img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.tarjeta p{
+    font-size: 15px;
+}
+/*Selector de tipo: ID*/
+/*Es UNICO*/
+#Dragones{
+    color:blueviolet;
+}
+#Puerquitos{
+    color:blue;
+}
